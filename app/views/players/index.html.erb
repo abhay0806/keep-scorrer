@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Players</title>
+</head>
+<body>
+  <div class="wrapper my-container">
+      <div class="def-box">
+        <div class="player-message">
+          <h1>Add your first player to get started</h1>
+        </div>
+      </div>
+
+      <div class="item">
+      <form class="form" action="">
+        <input type="text" class="form-input" name="playerName" placeholder="Player name">
+        <button id="abc" class="button" onclick="myHeader()">Add player</button>
+      </form>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+     // $(document).ready(function(){
+     // $("#abc").click(function(){
+      // $(".def-box").hide();
+      
+     // });
+   //});
+
+    function myHeader() {
+      var myHeader = "<div class='wrapper'>My Header</div>";
+      $(".def-box").html(myHeader);
+    }
+
+  </script> 
+</body>
+</html>

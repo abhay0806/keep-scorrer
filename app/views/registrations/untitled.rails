@@ -1,0 +1,19 @@
+
+<form>
+	<label for="UserName"><strong>User Name</strong> </label>
+	   <input type="text" class="box-size btn-rouned" placeholder="Enter User Name" name="User Name" required>
+
+	
+
+    <label for="LastName"><strong>Last Name</strong></label>
+      <input type="text" class="box-size btn-rouned" placeholder="Enter Last Name" name="LastName" required>
+
+    <label for="Password"><strong>Password</strong></label>
+      <input type="text" class="box-size btn-rouned" placeholder="Enter Password" name="Password" required>
+
+    <label for="ConfirmPassword"><strong>Confirm Password</strong></label>
+      <input type="text" class="box-size btn-rouned"  placeholder="Enter Confirm Password" name="ConfirmPassword" required>
+
+    <input type="submit" class="button btn-rouned" name="Add Player">
+</form>
+    

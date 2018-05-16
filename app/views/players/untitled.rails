@@ -1,0 +1,13 @@
+<div class="item item--position-1" style="">
+	<div class="player">
+		<div>
+			<h3 class="player__name">Leo</h3>
+			<p class="player__stats">1st place</p>
+		</div>
+		<div class="player__actions">
+			<button class="button button--round">-1</button>
+			<button class="button button--round">+1</button>
+			<button class="button button--round">X</button>
+		</div>
+	</div>
+</div>

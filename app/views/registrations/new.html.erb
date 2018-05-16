@@ -1,0 +1,52 @@
+
+<%= form_with scope: :registration, url: registrations_path, local: true do |form| %>
+ 
+  <% if @registration.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@registration.errors.count, "error") %> prohibited
+        this registration from being saved:
+      </h2>
+      <ul>
+        <% @registration.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+<div class="wrapper">
+	
+  <p>
+    <%= form.label :UserName %><br>
+    <%= form.text_field :UserName %>
+  </p>
+
+
+  <p>
+    <%= form.label :FirstName %><br>
+    <%= form.text_field :FirstName %>
+  </p>
+
+  <p>
+    <%= form.label :LastName %><br>
+    <%= form.text_field :LastName %>
+  </p>
+
+  <p>
+    <%= form.label :Password %><br>
+    <%= form.text_field :Password %>
+  </p>
+
+  <p>
+    <%= form.label :ConfirmPassword %><br>
+    <%= form.text_field :ConfirmPassword %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+  <% end %>
+</div>
+
+
